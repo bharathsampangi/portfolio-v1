@@ -4,10 +4,14 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Component Library</title>
+        <title>Bharath Sampangi</title>
 
+        <link rel="stylesheet" href="vendors/css/grids.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
+        />
         <link rel="stylesheet" href="assets/css/styles.css" />
     </head>
     <body>
@@ -30,10 +34,10 @@
 
         <section class="section-about-me bg-primary">
             <div class="row about-me">
-                <div>
-                    <img alt="aboutme-photo" src="assets/img/profile.JPG" alt="Profile"/>
+                <div class="col span-1-of-3">
+                    <img alt="aboutme-photo" src="assets/img/profile.JPG" alt="Profile" />
                 </div>
-                <div>
+                <div class="col span-2-of-3">
                     <h1>About Me</h1>
                     <p>
                         I am a self taught developer. My favourite tech stack is MERN stack. I have working knowledge on
@@ -47,7 +51,22 @@
         <section>
             <div class="row">
                 <h1>Skills and Technologies</h1>
-                <i class="fab fa-html5 icon-brand"></i>
+                <div>
+                    <div class="col span-1-of-2">
+                        <div class="">
+                            <h2>Markup / Styling Languages</h2>
+                            <i class="fab fa-html5 icon-big"></i>
+                            <i class="fab fa-css3-alt icon-big"></i>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <div class="">
+                            <h2>Programming Languages</h2>
+                            <i class="fab fa-js icon-big"></i>
+                            <i class="fab fa-java icon-big"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </body>
