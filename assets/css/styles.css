@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;1,400&display=swap');
 
 :root {
-    --primary-color: #5aa897;
-    --secondary-color: #f8a488;
+    --primary-color: #768948;
+    --secondary-color: #e9c46a;
 }
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -129,6 +129,10 @@ nav {
     border-radius: 50%;
 }
 
+/* ------------------------------------------------------------------------------------------------ */
+/* SKILLS */
+/* ------------------------------------------------------------------------------------------------ */
+
 .skills__row {
     padding: 1rem 0;
     text-align: center;
@@ -160,4 +164,88 @@ nav {
 
 .skills__row i:hover {
     color: var(--secondary-color);
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* EXPERIENCE */
+/* ------------------------------------------------------------------------------------------------ */
+
+.row__progress {
+    width: 100%;
+}
+
+.experience {
+    list-style: none;
+}
+
+.experience li {
+    display: flex;
+    color: #fff;
+}
+
+.experience .time {
+    position: relative;
+    padding: 2rem;
+}
+
+.experience li:last-child .time {
+    padding: 2rem 2rem 0 2rem;
+}
+
+.experience .time:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    transform: translateX(50%);
+    background: #fff;
+    z-index: 2;
+}
+
+.experience .content {
+    position: relative;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.experience .content:before {
+    content: "";
+    display: block;
+    border-left: 3px solid #fff;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
+}
+
+.experience li:last-child .content:before {
+    content: none;
+}
+
+.content small {
+    font-size: 80%;
+}
+
+.company {
+    display: flex;
+    width: 100%;
+}
+
+.company div:first-child {
+    font-size: large;
+}
+
+.company > div:last-child {
+    margin: 0 0 0 auto;
+}
+
+.section__footer {
+    padding: 2rem 0;
+    background: #333;
+    color: #fff;
 }
