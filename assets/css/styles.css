@@ -299,6 +299,10 @@ nav {
     margin-right: 1rem;
 }
 
+.section__projects h2 {
+    font-size: 130%;
+}
+
 .section__footer {
     padding: 2rem 0;
     background: linear-gradient(to right, rgba(51, 50, 50, 0.98), rgba(68, 67, 67, 0.98));
